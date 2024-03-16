@@ -1,4 +1,6 @@
 import './App.css'
+import Recipe from './component/Recipe'
+import Recipes from './component/Recipes'
 import Nav from './component/header/Nav'
 
 function App() {
@@ -20,6 +22,20 @@ function App() {
       <h1 className='text-black text-3xl'>Our Recipes</h1>
       <p className='text-gray-500'>This rich and silky chocolate mousse recipe is really just two easy recipes—chocolate custard and whipped cream—combined to make one elegant dessert.
 </p>
+     </div>
+
+     {/* recipe card */}
+
+     <div>
+      <Recipes></Recipes>
+      {/* <Recipe></Recipe> */}
+
+
+      <div>
+        {/* want to cook and currently cooking main div */}
+      </div>
+
+
      </div>
 
 
