@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 const Nav = () => {
     return (
         <div className="flex justify-around mt-10">
-            <h1>Recipe Calories</h1>
+            <h1 className="font-bold text-2xl">Recipe Calories</h1>
 
             {/* middle part */}
             <div className="flex justify-around gap-16">

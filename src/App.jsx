@@ -5,21 +5,26 @@ import Recipe from './component/Recipe'
 import Recipes from './component/Recipes'
 import Nav from './component/header/Nav'
 import Cookbtn from './Cookbtn'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import Footer from './component/Footer'
+
 
 function App() {
 
   const [wantToCook, setWantToCook] = useState([])
+  const [cCook, setcCook] = useState([])
 
 
   //  
   const handleWantToCook = (recipe) =>{
-    const isExist = wantToCook.find(item => item.recipe_id == recipe.id)
+    const isExist = wantToCook.find(item => item.recipe_id == recipe.recipe_id)
     if(!isExist){
       const newWantToCook = [...wantToCook, recipe]
       setWantToCook(newWantToCook)
     }
     else{
-      alert("already exist")
+      toast.warn(" Already added")
     }
   }
   // 
@@ -29,7 +34,9 @@ function App() {
   const handlePrepare = (id) =>{
 
     const preparing = wantToCook.filter(item => item.recipe_id !== id)
+    const item = wantToCook.find(item => item.recipe_id == id)
     setWantToCook(preparing)
+    setcCook([...cCook, item])
     
   }
 
@@ -60,16 +67,18 @@ function App() {
 
       <div>
         {/* want to cook and currently cooking main div */}
-  
+        <ToastContainer></ToastContainer>
+
         <Cooking wantToCook={wantToCook}
+        cCook={cCook}
          handlePrepare={handlePrepare}></Cooking>
       </div>
-
+     
 
      </div>
 
 
-   
+   <Footer></Footer>
 
 
 
