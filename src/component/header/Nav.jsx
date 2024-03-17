@@ -1,3 +1,6 @@
+import { CiSearch } from "react-icons/ci";
+import { CgProfile } from "react-icons/cg";
+
 
 
 const Nav = () => {
@@ -13,9 +16,12 @@ const Nav = () => {
                 <p>Search</p>
             </div>
             {/* search */}
-            <div>
-                <input className="w-48 p-2 rounded-xl bg-slate-200" type="search" placeholder="search..." name="" id="" />
-                {/* <img src={img1} alt="" /> */}
+            <div className="flex justify-center items-center">
+                <p><CiSearch></CiSearch></p>
+                <input className="w-48 p-2 rounded-xl bg-slate-200" type="search"  placeholder= "search..." name="" id="" />
+            </div>
+            <div className="flex justify-center items-center mr-32 bg-green-500 p-2 rounded-full">
+            <p ><CgProfile ></CgProfile></p>
             </div>
         </div>
     );

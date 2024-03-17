@@ -1,5 +1,8 @@
+import { CiClock2 } from "react-icons/ci";
+import { LuFlame } from "react-icons/lu";
 
-const Recipe = ({recipe}) => {
+
+const Recipe = ({recipe, handleWantToCook}) => {
     const{recipe_name, short_description,ingredients, preparing_time,calories,recipe_image} = recipe
     return (
         <div>
@@ -11,10 +14,10 @@ const Recipe = ({recipe}) => {
   <div class="card-body items-center text-center">
     <h2 class="card-title">{recipe_name}</h2>
     <p className="text-gray-500">{short_description}</p>
-    <div class="card-actions">
+    <div >
         <br />
         <hr />
-        <br />
+        {/* <br /> */}
 
         {/* Ingredients */}
         <h1>Ingredients: {ingredients.length}</h1>
@@ -27,25 +30,29 @@ const Recipe = ({recipe}) => {
         </ol>
         <br />
         <hr />
-        <br />
+        {/* <br /> */}
         
         {/* main */}
-        <div>
+        <div className="flex items-center justify-around">
             {/* part-1 */}
-            <div>
-                <img src="" alt="" />
-                <p>{preparing_time}</p>
+            <div className="flex justify-center items-center gap-1">
+                <p><CiClock2></CiClock2></p>
+                <p>{preparing_time} min</p>
             </div>
 
             {/* part-2 */}
 
-            <div>
-                <img src="" alt="" />
-                <p>{calories}</p>
+            <div className="flex justify-center items-center gap-1">
+                <p><LuFlame></LuFlame></p>
+                <p>{calories} calories</p>
             </div>
         </div>
 
-      <button className="bg-green-500 rounded-xl p-2" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-500">Want to cook</button>
+      <div>
+        <br />
+        <button onClick={() =>handleWantToCook(recipe)} class="btn btn-active bg-green-500 ">Want to cook</button>
+      
+      </div>
     </div>
   </div>
 </div>

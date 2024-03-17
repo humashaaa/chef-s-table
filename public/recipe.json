@@ -5,7 +5,7 @@
       "short_description": "Delicious baked salmon fillets seasoned with garlic butter and herbs.",
       "ingredients": ["4 salmon fillets", "4 cloves garlic minced", "2 tablespoons butter melted", "1 tablespoon fresh parsley", "2 tablespoons lemon juice", "Salt and pepper to"],
       "preparing_time": 25,
-      "calories": "320 calories",
+      "calories": 320,
       "recipe_image": "https://i.ibb.co/F5VP1sn/eiliv-aceron-w0-Jzq-JZYX-E-unsplash.jpg"
     },
     {
@@ -14,7 +14,7 @@
       "short_description": "A refreshing salad featuring ripe tomatoes, fresh mozzarella, and basil.",
       "ingredients": ["4 large tomatoes sliced", "8 oz fresh mozzarella, sliced", "1/4 cup fresh basil leaves", "2 tablespoons balsamic glaze", "Salt and pepper to taste", "1 red bell pepper, sliced"],
       "preparing_time": 15,
-      "calories": "180 calories",
+      "calories": 150,
       "recipe_image": "https://i.ibb.co/9qbRgYs/dovile-ramoskaite-x-X9-Smq-QCb-FY-unsplash.jpg"
     },
     {
@@ -23,7 +23,7 @@
       "short_description": "A quick and healthy stir-fry loaded with colorful vegetables.",
       "ingredients": ["1 red bell pepper, sliced", "1 green bell pepper, sliced", "1 cup broccoli florets", "1 cup snow peas", "2 carrots, sliced", "3 tablespoons soy sauce"],
       "preparing_time": 20,
-      "calories": "200 calories",
+      "calories": 200,
       "recipe_image": "https://i.ibb.co/sWxQ4S1/sirasit-gullasu-Wq-QZl5-g0jk-unsplash.jpg"
     },
     {
@@ -32,7 +32,7 @@
       "short_description": "Creamy pasta dish with tender chicken and rich Alfredo sauce.",
       "ingredients": ["8 oz fettuccine pasta", "2 chicken breasts, cooked and sliced", "2 cups heavy cream", "1 cup grated Parmesan cheese", "2 cloves garlic, minced", "2 tablespoons butter"],
       "preparing_time": 35,
-      "calories": "480 calories",
+      "calories": 400,
       "recipe_image": "https://i.ibb.co/K5W1WW3/mgg-vitchakorn-PLy-Jq-EJVre0-unsplash.jpg"
     },
     {
@@ -41,7 +41,7 @@
       "short_description": "Grilled chicken breasts topped with fresh mango salsa.",
       "ingredients": ["4 chicken breasts", "2 mangoes, diced", "1/2 red onion, finely chopped", "1 jalapeno, seeded and minced", "1/4 cup cilantro, chopped", "Juice of 1 lime"],
       "preparing_time": 30,
-      "calories": "280 calories",
+      "calories": 280,
       "recipe_image": "https://i.ibb.co/xsL585P/toa-heftiba-B1-Ku-LO3-No-Rg-unsplash.jpg"
     },
     {
@@ -50,7 +50,7 @@
       "short_description": "A nutritious salad packed with quinoa, avocado, and veggies.",
       "ingredients": ["1 cup quinoa, cooked", "1 avocado, diced", "1 cucumber, diced", "1 bell pepper, diced", "1/4 cup red onion, finely chopped", "2 tablespoons olive oil"],
       "preparing_time": 25,
-      "calories": "240 calories",
+      "calories": 240,
       "recipe_image": "https://i.ibb.co/xgqwf6V/taylor-kiser-Evo-Iia-IVRz-U-unsplash.jpg"
     }
   ]

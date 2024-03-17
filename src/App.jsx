@@ -1,9 +1,19 @@
+import { useState } from 'react'
 import './App.css'
+import Cooking from './component/Cooking'
 import Recipe from './component/Recipe'
 import Recipes from './component/Recipes'
 import Nav from './component/header/Nav'
+import Cookbtn from './Cookbtn'
 
 function App() {
+
+  const [wantToCook, setWantToCook] = useState([])
+
+  const handleWantToCook = (recipe) =>{
+    const newWantToCook = [...wantToCook, recipe]
+    setWantToCook(newWantToCook)
+  }
 
   return (
     <>
@@ -26,13 +36,14 @@ function App() {
 
      {/* recipe card */}
 
-     <div>
-      <Recipes></Recipes>
-      {/* <Recipe></Recipe> */}
+     <div className='flex justify-around mt-28 gap-7'>
+      <Recipes handleWantToCook={handleWantToCook}></Recipes>
 
 
       <div>
         {/* want to cook and currently cooking main div */}
+  
+        <Cooking wantToCook={wantToCook}></Cooking>
       </div>
 
 
