@@ -1,6 +1,6 @@
 import Cookbtn from "../Cookbtn";
 
-const Cooking = ({wantToCook}) => {
+const Cooking = ({wantToCook, handlePrepare}) => {
     console.log(wantToCook)
     return (
         <div>
@@ -15,7 +15,7 @@ const Cooking = ({wantToCook}) => {
         <p>Calories</p>
       </div>
             {
-                wantToCook.map((cookbtn, index) => <Cookbtn cookbtn={cookbtn}></Cookbtn>)
+                wantToCook.map((cookbtn, index) => <Cookbtn index={index} cookbtn={cookbtn} handlePrepare={handlePrepare}></Cookbtn>)
             }
 
 

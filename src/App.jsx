@@ -10,9 +10,27 @@ function App() {
 
   const [wantToCook, setWantToCook] = useState([])
 
+
+  //  
   const handleWantToCook = (recipe) =>{
-    const newWantToCook = [...wantToCook, recipe]
-    setWantToCook(newWantToCook)
+    const isExist = wantToCook.find(item => item.recipe_id == recipe.id)
+    if(!isExist){
+      const newWantToCook = [...wantToCook, recipe]
+      setWantToCook(newWantToCook)
+    }
+    else{
+      alert("already exist")
+    }
+  }
+  // 
+
+  // handle preparing
+
+  const handlePrepare = (id) =>{
+
+    const preparing = wantToCook.filter(item => item.recipe_id !== id)
+    setWantToCook(preparing)
+    
   }
 
   return (
@@ -43,7 +61,8 @@ function App() {
       <div>
         {/* want to cook and currently cooking main div */}
   
-        <Cooking wantToCook={wantToCook}></Cooking>
+        <Cooking wantToCook={wantToCook}
+         handlePrepare={handlePrepare}></Cooking>
       </div>
 
 
